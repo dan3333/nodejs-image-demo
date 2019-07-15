@@ -28,26 +28,13 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-lg-4">
-            <p>
-                <div class="caption">Some sharks are known to be dangerous to humans, though many more are not. The sawshark, for example, is not considered a threat to humans.
-                </div>
-                <img src="https://assets.digitalocean.com/articles/docker_node_image/sawshark.jpg" alt="Sawshark">
-            </p>
-        </div>
-        <div class="col-lg-4">
-            <p>
-                <div class="caption">Other sharks are known to be friendly and welcoming!</div>
-                <img src="https://assets.digitalocean.com/articles/docker_node_image/sammy.png" alt="Sammy the Shark">
-            </p>
-        </div>
 	<div class="col-lg-4">
             <p>
               <div class="caption">Your Sharks</div>
                   <ul>
                      <% apartments.forEach(function(apartment) { %>
                         <p>Name: <%= apartment.name %></p>
-                        <p>Character: <%= apartment.character %></p>
+                        <p>Character: <%= apartment.description %></p>
                      <% }); %>
                   </ul>
             </p>
